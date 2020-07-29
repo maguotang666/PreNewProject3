@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_list_item"
+        android:background="@color/white_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y30">
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_main_list_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:background="@drawable/main_list_item1">
+
+                <TextView
+                    android:id="@+id/tv_main_list_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/x12"
+                    android:text="置顶"
+                    android:textColor="@color/comm_title_color"
+                    android:textSize="@dimen/main_list_item1" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_main_list_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x36"
+                android:layout_toRightOf="@+id/rl_main_list_type"
+                android:text="小编"
+                android:textColor="@color/main_list_item_color1"
+                android:textSize="@dimen/main_list_item2" />
+
+
+            <TextView
+                android:id="@+id/tv_main_list_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x33"
+                android:text="2018-11-03"
+                android:textColor="@color/main_list_item_color1"
+                android:textSize="@dimen/main_list_item2" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_main_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y34"
+            android:text="课程推荐"
+            android:textColor="@color/main_list_item_color2"
+            android:textSize="@dimen/main_list_item3" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y35"
+            android:layout_marginTop="@dimen/y69">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_chapterName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="干货资源"
+                    android:textColor="@color/main_list_item_color1"
+                    android:textSize="@dimen/main_list_item2" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_collection"
+                android:layout_width="@dimen/x65"
+                android:layout_height="@dimen/y60"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x33"
+                android:background="@drawable/main_collection" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

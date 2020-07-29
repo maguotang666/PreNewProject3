@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y435"
+        android:background="@color/comm_title_color">
+
+        <RelativeLayout
+            android:id="@+id/rl_user_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/y140"
+            android:background="@drawable/solid_bg">
+
+
+            <com.example.administrator.prenewproject.view.CircleImageView
+                android:layout_width="@dimen/x245"
+                android:layout_height="@dimen/y245"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/hugh" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/y50"
+            android:text="111111"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/main_list_item3" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_collection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_marginTop="@dimen/y30">
+
+
+        <ImageView
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x50"
+            android:src="@drawable/collection_img" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x220"
+            android:text="收藏"
+            android:textColor="@color/main_list_item_color2"
+            android:textSize="@dimen/main_list_item3" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+
+        <ImageView
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x80"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x60"
+            android:src="@drawable/tool_img" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x220"
+            android:text="TODO工具"
+            android:textColor="@color/main_list_item_color2"
+            android:textSize="@dimen/main_list_item3" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_night"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+
+        <ImageView
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/y80"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x60"
+            android:src="@drawable/night_img" />
+
+
+        <TextView
+            android:id="@+id/tv_change_pattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x220"
+            android:text="夜间模式"
+            android:textColor="@color/main_list_item_color2"
+            android:textSize="@dimen/main_list_item3" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+
+        <ImageView
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x50"
+            android:src="@drawable/setting_img" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x220"
+            android:text="设置"
+            android:textColor="@color/main_list_item_color2"
+            android:textSize="@dimen/main_list_item3" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+
+        <ImageView
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/y80"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x60"
+            android:src="@drawable/about_img" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x220"
+            android:text="关于我们"
+            android:textColor="@color/main_list_item_color2"
+            android:textSize="@dimen/main_list_item3" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+
+        <ImageView
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/y80"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x60"
+            android:src="@drawable/sign_out_img" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x220"
+            android:text="退出登录"
+            android:textColor="@color/main_list_item_color2"
+            android:textSize="@dimen/main_list_item3" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

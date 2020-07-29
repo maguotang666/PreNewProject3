@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="transparent_background">#50000000</color>
+    <color name="colorDialogBG">#7f66625F</color>
+    <color name="line_bg_color">#c9c9c9</color>
+
+    <color name="comm_title_color">#EB1F64</color>
+    <color name="dark">#FF222222</color>
+    <color name="black">#000000</color>
+    <color name="white_color">#ffffff</color>
+
+    <color name="web_prb">#1AAC19</color>
+
+    <color name="main_list_item_color1">#696A65</color>
+
+    <color name="main_list_item_color2">#000000</color>
+
+    <color name="main_list_item_color3">#6AC0C2</color>
+
+    <color name="navigation1_bg">#F8F5F6</color>
+
+
+    <color name="todo_item_time_bg">#F5F5F5</color>
+
+    <!--todo已完成-->
+    <color name="todo_work_finish">#4CB050</color>
+
+
+</resources>

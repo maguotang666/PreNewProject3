@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_know_ledge_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_know_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x140"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_know_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x32"
+                android:layout_marginTop="@dimen/y44"
+                android:text="开发环境"
+                android:textColor="@color/main_list_item_color2"
+                android:textSize="@dimen/main_list_item3" />
+
+
+            <TextView
+                android:id="@+id/tv_know_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x32"
+                android:layout_marginTop="@dimen/y44"
+                android:text="Android Studio相关"
+                android:layout_marginBottom="@dimen/y44"
+                android:textColor="@color/main_list_item_color1"
+                android:textSize="@dimen/main_list_item2" />
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_marginRight="@dimen/x50"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="38dp"
+            android:src="@drawable/ic_forward" />
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

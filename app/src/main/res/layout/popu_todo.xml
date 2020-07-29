@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x700"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_only_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="只用这一个"
+        android:textColor="@color/main_list_item_color3"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="工作"
+        android:textColor="@color/dark"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_study"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="学习"
+        android:textColor="@color/dark"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_life"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="生活"
+        android:textColor="@color/dark"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y300"
+    android:background="@color/white_color"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_todo_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/todo_item_time_bg">
+
+        <TextView
+            android:id="@+id/tv_todo_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x20"
+            android:text="2019-04-11"
+            android:textColor="@color/main_list_item_color3"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_todo_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:tag="slide_flag">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+
+            <TextView
+                android:id="@+id/tv_todo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x80"
+                android:layout_marginTop="@dimen/y30"
+                android:text="突突突"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_todo_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x80"
+                android:layout_marginTop="@dimen/y120"
+                android:layout_marginBottom="@dimen/y30"
+                android:text="999"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_todo_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_priority"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/slide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/rl_content"
+            android:clipChildren="false"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@color/todo_work_finish"
+                android:gravity="center"
+                android:text="标为已完成"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tv_work_finish"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@color/todo_work_finish"
+                android:gravity="center"
+                android:text="标为已完成"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_delect"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FE3C31"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

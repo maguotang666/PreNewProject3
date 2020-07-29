@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--</LinearLayout>-->
+    <!--添加DrawerLayout-->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 一般第一个位置的代表 主内容 -->
+        <FrameLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- 左侧菜单(设置layout_gravity 为left) -->
+        <RelativeLayout
+            android:id="@+id/left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/y50" />
+
+        <!-- 右侧菜单(设置layout_gravity 为right) -->
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/right"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="right" />-->
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

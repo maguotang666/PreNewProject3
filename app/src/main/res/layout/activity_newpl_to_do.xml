@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NewplToDoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/comm_title" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/x30"
+                android:text="标题:"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/et_new_todo_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x240"
+                android:background="@null"
+                android:hint="必填"
+                android:padding="@dimen/x20"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_bg_color" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/x30"
+                android:text="详情:"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/et_new_todo_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/x240"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="非必填"
+                android:lines="5"
+                android:padding="@dimen/x20"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_bg_color" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/x30"
+                android:text="优先级:"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x240"
+                android:button="@drawable/checkbox_style"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cb1"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/x30"
+                android:text="一般"
+                android:textSize="13sp" />
+
+
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv1"
+                android:button="@drawable/checkbox_style"
+                android:focusable="false" />
+
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cb2"
+                android:padding="@dimen/x30"
+                android:text="重要"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_bg_color" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/x30"
+                android:text="日期:"
+                android:textSize="16sp" />
+
+
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/rl_select_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x240">
+
+
+                <TextView
+                    android:id="@+id/tv_new_todo_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:padding="@dimen/x20"
+                    android:text="2019-04-30"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/x80"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:src="@drawable/ic_forward" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_bg_color" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginRight="@dimen/x100"
+        android:layout_marginBottom="@dimen/y100"
+        android:background="@color/main_list_item_color3"
+        android:text="保存"
+        android:textColor="@color/white_color" />
+
+    <DatePicker
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_know"
+    tools:context=".activity.KnowLedgeDetailsActivity">
+
+    <include layout="@layout/comm_title"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/pub_num_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/comm_title_color"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="#ffffff"
+        app:tabMinWidth="30dp"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="10dp"
+        app:tabPaddingStart="10dp"
+        app:tabSelectedTextColor="#ffffff"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="#fff" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pub_num_vp"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>
